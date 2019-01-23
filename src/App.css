@@ -8,18 +8,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #6da7e3;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  padding: 20px;
 }
 
 .App-link {
   color: #61dafb;
+  color: black;
+}
+
+.diceImage{
+background-color: #6da7e3;
+color: black;
+min-height: 50vh;
+}
+
+.diceControl{
+  background-color: #6da7e3;
+  color: black;
+  min-height: 50vh;
 }
 
 @keyframes App-logo-spin {
@@ -29,4 +43,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/*
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to { 
+    -webkit-transform: rotateY(360deg);
+  }
+}
+*/
+/*
+img.star {
+    -webkit-animation-name:            rotate; 
+    -webkit-animation-duration:        0.5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}*/
+
+img.star {
+    animation: rotate 0.5s infinite linear;
 }
